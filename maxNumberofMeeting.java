@@ -9,7 +9,7 @@ public int findMaxMeetings(Interval[] intervals){
 
 }
 
-public int helper(Interval[] intervals, int start){
+public int helper(Interval[] intervals, int start){	//helper function used to find the max number of meeting from the start pointed interval
 	if(start == intervals.length - 1)
 		return 1;
 	if(intervals[start + 1].start >= intervals[start].end)
